@@ -1,0 +1,33 @@
+{% include "header1.html" %}
+    <section id="contact" style="background: url('/static/img/logo.jpg')">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="" method="post">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" value="{{n1}}" name="name" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="name">Email:</label>
+                    <input type="text" value="{{n2}}" name="email" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="name">Contact No:</label>
+                    <input type="text" value="{{n3}}" name="contact" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="name">Message:</label>
+                    <textarea name="msg" value="{{n4}}" id="msg" cols="30" rows="10"></textarea>
+                </div>
+                <button  align-item="center" style="background-color: red; border: 2px solid white;" >Submit</button>
+                
+            </form>
+        </div>
+    </section>
+   
+    {% include 'footer.html' %}
+
+
+</body>
+</html>

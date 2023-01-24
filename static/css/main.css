@@ -1,0 +1,233 @@
+/*css reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #f3f3f3;
+    font-family: 'Kaushan Script', cursive;
+}
+/*css variable */
+:root{
+    --navbar-height:59px;
+}
+
+/*Navbar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top:  0px;
+}
+
+/*navbar:logo and img*/
+
+#logo{
+    margin: 10px 34px;
+
+}
+#logo img{
+    height:50px;
+    margin: 3px 6px;
+    border-radius: 50%;
+}
+/*navbar :list style */
+
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+  /*  border-radius: 18px;*/
+    text-decoration: none;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+   
+    font-family: 'Kaushan Script', cursive;
+}
+#navbar ul li a:hover{
+    color: #000;
+    background-color: white;
+}
+
+/*home section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 578px;
+}
+#home::before{
+    content: "";
+    background: url('/static/img/f2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.88;
+}
+#home h1{
+    font-family: 'Kaushan Script', cursive;
+    color: white;
+    text-align: center;
+}
+#home p{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+}
+/*services*/
+
+#services{
+    margin:10px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 30px;
+    background:#f2f2f2;
+    font-family: 'Kaushan Script', cursive;
+}
+#services .box img{
+    height: 100px;
+    margin: auto;
+    display: block;
+}
+
+/*client-section*/
+#client-section{
+height: 344px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('/static/img/f5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 50%;
+    z-index: -1;
+    opacity: 0.87;
+    
+    }
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height:145px;
+    border-radius: 50%;
+}
+.client-item{
+    padding: 34px;
+
+}
+
+/*contact Section */
+#contact{
+position: relative;
+font-family: 'Kaushan Script', cursive;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url("/static/img/logo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:15px ;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+    font-family: 'Kaushan Script', cursive;
+}
+#contact-box form{
+    width: 40%;
+    
+}
+#contact-box label{
+    font-size: 1.3rem;
+}
+
+footer{
+    background:black;
+    color: white;
+    padding: 9px 20px;
+    font-family: 'Kaushan Script', cursive;
+}
+/*utility classes*/
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Kaushan Script', cursive;
+    
+}
+.h-secondary{
+    font-size: 2.0rem;
+    padding: 12px;
+    font-family: 'Kaushan Script', cursive;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    margin: 17px;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+.center{
+    text-align: center;
+}
+
+
+
+
+
+

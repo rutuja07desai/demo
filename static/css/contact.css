@@ -1,0 +1,37 @@
+/*contact Section */
+#contact{
+    position: relative;
+    font-family: 'Kaushan Script', cursive;
+    }
+    #contact::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.7;
+        background: url("./img/logo.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #contact-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom:15px ;
+    }
+    #contact-box input,
+    #contact-box textarea{
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 9px;
+        font-size: 1.1rem;
+        font-family: 'Kaushan Script', cursive;
+    }
+    #contact-box form{
+        width: 40%;
+        
+    }
+    #contact-box label{
+        font-size: 1.3rem;
+    }
